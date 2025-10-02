@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Terapias | AYA Terapias Integradas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        .therapy-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('http://static.photos/wellness/1200x630/43');
+            background-size: cover;
+            background-position: center;
+        }
+        .therapy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-poppins bg-gray-50">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-sm fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-green-600 font-playfair text-xl font-bold">AYA</span>
+                    <span class="ml-1 text-gray-800 font-playfair text-xl">Terapias</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-green-600 transition">Início</a>
+                    <a href="sobre.html" class="text-gray-600 hover:text-green-600 transition">Sobre Nós</a>
+                    <a href="#" class="text-green-600 font-medium">Terapias</a>
+                    <a href="formacao.html" class="text-gray-600 hover:text-green-600 transition">Formação em Yoga</a>
+                    <a href="contato.html" class="text-gray-600 hover:text-green-600 transition">Contato</a>
+                </div>
+                <div class="flex items-center">
+                    <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md text-sm font-medium transition">Agende agora</a>
+                    <button class="md:hidden ml-4">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="relative pt-32 pb-20 therapy-bg text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="font-playfair text-4xl sm:text-5xl font-bold">Nossas Terapias Integrativas</h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg">
+                Descubra as diferentes abordagens terapêuticas que oferecemos para cuidar de você por completo
+            </p>
+        </div>
+    </div>
+
+    <!-- Therapies Grid -->
+    <div class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Acupuncture -->
+                <div class="therapy-card bg-gray-50 rounded-lg overflow-hidden transition duration-300 ease-in-out">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img class="h-full w-full object-cover" src="http://static.photos/medical/640x360/19" alt="Acupuntura">
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="font-playfair text-2xl font-bold text-gray-900">Acupuntura</h3>
+                            <p class="mt-3 text-gray-600">
+                                Harmonize seu fluxo energético com esta técnica milenar da Medicina Tradicional Chinesa. 
+                                Indicada para dores crônicas, estresse, ansiedade e diversos desequilíbrios.
+                            </p>
+                            <div class="mt-6">
+                                <a href="#" class="text-green-600 font-medium hover:text-green-700 transition flex items-center">
+                                    Saiba mais
+                                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Yoga -->
+                <div class="therapy-card bg-gray-50 rounded-lg overflow-hidden transition duration-300 ease-in-out">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img class="h-full w-full object-cover" src="http://static.photos/yoga/640x360/21" alt="Yoga">
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="font-playfair text-2xl font-bold text-gray-900">Yoga</h3>
+                            <p class="mt-3 text-gray-600">
+                                Conecte corpo, mente e respiração. Aulas personalizadas para todos os níveis, incluindo 
+                                Yoga Terapêutico, Hatha Yoga e Yoga para Gestantes.
+                            </p>
+                            <div class="mt-6">
+                                <a href="#" class="text-green-600 font-medium hover:text-green-700 transition flex items-center">
+                                    Saiba mais
+                                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art Therapy -->
+                <div class="therapy-card bg-gray-50 rounded-lg overflow-hidden transition duration-300 ease-in-out">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img class="h-full w-full object-cover" src="http://static.photos/art/640x360/23" alt="Arteterapia">
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="font-playfair text-2xl font-bold text-gray-900">Arteterapia</h3>
+                            <p class="mt-3 text-gray-600">
+                                Explore seu mundo interior através da criatividade. Uma abordagem terapêutica que 
+                                utiliza recursos artísticos para expressão e autoconhecimento.
+                            </p>
+                            <div class="mt-6">
+                                <a href="#" class="text-green-600 font-medium hover:text-green-700 transition flex items-center">
+                                    Saiba mais
+                                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Massage -->
+                <div class="therapy-card bg-gray-50 rounded-lg overflow-hidden transition duration-300 ease-in-out">
+                    <div class="md:flex">
+                        <div class="md:w-1/3">
+                            <img class="h-full w-full object-cover" src="http://static.photos/wellness/640x360/25" alt="Massoterapia">
+                        </div>
+                        <div class="p-8 md:w-2/3">
+                            <h3 class="font-playfair text-2xl font-bold text-gray-900">Massoterapia</h3>
+                            <p class="mt-3 text-gray-600">
+                                Técnicas de massagem integrativas para alívio de tensões, relaxamento profundo e 
+                                equilíbrio energético.
+                            </p>
+                            <div class="mt-6">
+                                <a href="#" class="text-green-600 font-medium hover:text-green-700 transition flex items-center">
+                                    Saiba mais
+                                    <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits Section -->
+    <div class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="font-playfair text-3xl font-bold text-gray-900">Benefícios das Terapias Integrativas</h2>
+                <p class="mt-4 max-w-2xl text-xl text-gray-600 mx-auto">
+                    Como essas práticas podem transformar sua qualidade de vida
+                </p>
+            </div>
+
+            <div class="mt-16 grid gap-8 md:grid-cols-3">
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="text-green-600">
+                        <i data-feather="activity" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="mt-6 font-playfair text-xl font-bold text-gray-900">Saúde Física</h3>
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Alívio de dores crônicas</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Melhora da flexibilidade e postura</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Fortalecimento do sistema imunológico</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="text-green-600">
+                        <i data-feather="heart" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="mt-6 font-playfair text-xl font-bold text-gray-900">Bem-Estar Emocional</h3>
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Redução de estresse e ansiedade</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Melhora na qualidade do sono</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Autoconhecimento e equilíbrio emocional</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-sm">
+                    <div class="text-green-600">
+                        <i data-feather="zap" class="w-10 h-10"></i>
+                    </div>
+                    <h3 class="mt-6 font-playfair text-xl font-bold text-gray-900">Energia Vital</h3>
+                    <ul class="mt-4 space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Harmonização dos centros energéticos</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Reequilíbrio do fluxo energético</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="check" class="text-green-500 mr-2 mt-1 flex-shrink-0"></i>
+                            <span>Vitalidade e disposição renovadas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="bg-green-700">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+            <h2 class="font-playfair text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                <span class="block">Pronto para experimentar?</span>
+                <span class="block text-green-200">Agende uma avaliação gratuita.</span>
+            </h2>
+            <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+                <div class="inline-flex rounded-md shadow">
+                    <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50 transition">
+                        Agendar avaliação
+                        <i data-feather="calendar" class="ml-2 -mr-1 w-4 h-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-white font-playfair text-lg font-bold">AYA Terapias</h3>
+                    <p class="mt-4 text-sm">
+                        Um refúgio para o corpo e a mente em Santana, São Paulo.
+                    </p>
+                    <div class="mt-4 flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i data-feather="facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white text-sm font-semibold uppercase tracking-wider">Links</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="index.html" class="text-sm hover:text-white transition">Início</a></li>
+                        <li><a href="sobre.html" class="text-sm hover:text-white transition">Sobre Nós</a></li>
+                        <li><a href="#" class="text-sm hover:text-white transition">Terapias</a></li>
+                        <li><a href="formacao.html" class="text-sm hover:text-white transition">Formação em Yoga</a></li>
+                        <li><a href="contato.html" class="text-sm hover:text-white transition">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-sm font-semibold uppercase tracking-wider">Contato</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-sm">Rua Damiana da Cunha, 413</li>
+                        <li class="text-sm">3º Andar - Santana, SP</li>
+                        <li class="text-sm">(11) 99577-3222</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white text-sm font-semibold uppercase tracking-wider">Horários</h3>
+                    <ul class="mt-4 space-y-2">
+                        <li class="text-sm">Seg-Sex: 8h às 20h</li>
+                        <li class="text-sm">Sábado: 9h às 14h</li>
+                        <li class="text-sm">Domingo: Fechado</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-800 pt-8">
+                <p class="text-xs text-gray-400 text-center">
+                    &copy; 2023 AYA Terapias Integradas. Todos os direitos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
